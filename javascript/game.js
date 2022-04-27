@@ -36,13 +36,14 @@ class Game {
             canvas.style.display = "none";
             gameOverTitle.style.display = "block"
             gameOverScreen.style.display = "flex";
+            audio.pause()
           }
       }
     })
   }
 
   addNewPoops = () => {
-    if (this.poopArr[this.poopArr.length - 1].y > 400 || this.poopArr.length === 0) {
+    if (this.poopArr[this.poopArr.length - 1].y > 400) {
       let randomPositionChange = Math.random() * 500
       let newPoop = new Poop(randomPositionChange, "./images/poop.png")
       this.poopArr.push(newPoop) 

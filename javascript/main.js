@@ -32,6 +32,9 @@ const startGame = () =>{
   logoTitle.style.display = "block"
   gameOverScreen.style.display = "none"
   scoreDom.innerText = 0
+  audio.play()
+  audio.loop = true
+  audio.volumen = 0.01
 
   
 
@@ -41,9 +44,7 @@ const startGame = () =>{
 }
 
 
-// audio.play()
-// audio.loop =(true)
-// audio.volumen = 0.01
+
 
 
 

@@ -8,7 +8,7 @@ class Car {
         this.h = 100;
         this.img = new Image()
         this.img.src="./images/car.png"
-        this.speed = 20;
+        this.speed = 40;
         this.carDirectionX = 1
     
         
