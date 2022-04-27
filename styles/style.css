@@ -1,11 +1,21 @@
 body {
     margin: 0;
-    background-color: lightgray;
+    background-color:lightblue;
   }
   
-  #my-canvas {
-    background-color: darkgray;
+  #my-canvas  {
+    background-color:lightgray;
+    
+
   }
+  .score{
+    font-style: italic;
+    padding: 50px;
+    font-size: 30px;
+  
+   
+  }
+ 
   
   #start-btn, #restart-btn {
     background-color: green;
@@ -15,7 +25,12 @@ body {
     margin-top: 40px;
     border-radius: 10px; 
   }
+
+  #my-lives{
+    color: black;
+  }
   
+
   .container {
     display: flex;
     flex-direction: column;
@@ -24,9 +39,42 @@ body {
     margin: 50px;
   }
 
-  #my-canvas, #gameover-screen{
+  #my-canvas{
     display: none;
   }
+  #gameover-screen{
+    display: none;
+    
+  }
+
+  .score{
+    display: none;
+    
+  }
+
+  .cleanCar{
+    color: black;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .cleanCarTwo{
+    color: black;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -50px;
+
+  }
+  
+ .gameover {
+  font-size: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: -70px;
+  
+
+
+ }
+
+ 
  
 
   
