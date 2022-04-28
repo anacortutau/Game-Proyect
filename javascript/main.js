@@ -13,6 +13,7 @@ const scoreDom = document.querySelector(".score  span")
 const logoTitle = document.querySelector(".cleanCar")
 const gameOverTitle = document.querySelector(".gameover")
 
+
 const audio = new Audio("./audio/audio.mp3")
 
 
