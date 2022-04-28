@@ -10,18 +10,19 @@ class Game {
     this.bird = new Bird(20, 0)
     this.bird1 = new Bird(550, 0)
     this.bird2 = new Bird(300, 0)
-
+    this.score = 0;
 
   }
 
-
-  score = () =>{
+  points = () => {
     this.poopArr.forEach((eachPoop) => {
-      if(eachPoop.y === 504){ 
-        scoreDom.innerText = Number(scoreDom.innerText) + 10;
+      if (eachPoop.y === 504) {
+        this.score += 10;
+
+
       }
     })
-}
+  }
 
   gameOverCollision = () => {
     this.poopArr.forEach((eachPoop, i) => {
@@ -29,15 +30,15 @@ class Game {
         this.car.x + this.car.w > eachPoop.x &&
         this.car.y < eachPoop.y + eachPoop.h &&
         this.car.h + this.car.y > eachPoop.y) {
-          this.poopArr.splice(i, 1)
-          this.livesArr.pop()
-          if (this.livesArr.length === 0) {
-            this.isGameOn = false;
-            canvas.style.display = "none";
-            gameOverTitle.style.display = "block"
-            gameOverScreen.style.display = "flex";
-            audio.pause()
-          }
+        this.poopArr.splice(i, 1)
+        this.livesArr.pop()
+        if (this.livesArr.length === 0) {
+          this.isGameOn = false;
+          canvas.style.display = "none";
+          gameOverTitle.style.display = "block"
+          gameOverScreen.style.display = "flex";
+          audio.pause()
+        }
       }
     })
   }
@@ -46,15 +47,19 @@ class Game {
     if (this.poopArr[this.poopArr.length - 1].y > 400) {
       let randomPositionChange = Math.random() * 500
       let newPoop = new Poop(randomPositionChange, "./images/poop.png")
-      this.poopArr.push(newPoop) 
+      this.poopArr.push(newPoop)
     }
+    this.poopArr.forEach((eachPoop) => {
+      if (this.score > 100) {
+        eachPoop.speed = 8
+      }
+
+    })
+
+
   }
 
-
-
-
   //Todos los metodos que regulan nuestro juego
-
   gameLoop = () => {
     //1. Borrar el canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height)
@@ -73,7 +78,10 @@ class Game {
       eachPoop.movePoop()
     })
     this.gameOverCollision()
-    this.score()
+    //this.score()
+    scoreDom.innerText = Math.floor(this.score);
+    //this.difficultyLevel()
+    this.points()
     //3. dibujar los elementos.
     ctx.drawImage(this.bg, 0, 0, canvas.width, canvas.height)
     this.car.drawCar()
@@ -91,7 +99,7 @@ class Game {
     if (this.isGameOn === true) {
       requestAnimationFrame(this.gameLoop)
     }
-    
+
   }
 }
 

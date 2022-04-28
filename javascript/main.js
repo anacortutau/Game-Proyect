@@ -20,11 +20,9 @@ let game;
 
 
 
-
-
 // * STATE MANAGEMENT FUNCTIONS
 
-const startGame = () =>{
+const startGame = () => {
   console.log("iniciando juego")
   startSreen.style.display = "none";
   canvas.style.display = "block";
@@ -34,45 +32,39 @@ const startGame = () =>{
   scoreDom.innerText = 0
   audio.play()
   audio.loop = true
-  audio.volumen = 0.01
+  audio.volume = 0.40
 
-  
+
 
   game = new Game()// esta solo va a existir en el scope startGame
   game.gameLoop()
 
 }
 
-
-
-
-
-
-const carMove= (event) =>{
-  if(event.code === "ArrowLeft"){
+const carMove = (event) => {
+  if (event.code === "ArrowLeft") {
     game.car.carMoveLeft()
-  }else if(event.code === "ArrowRight"){
+  } else if (event.code === "ArrowRight") {
     game.car.carMoveRight()
   }
 
 }
 
 
-  // * ADD EVENT LISTENERS
+// * ADD EVENT LISTENERS
 
 
 
-  startBtn.addEventListener("click",startGame)
-  restartBtn.addEventListener("click", startGame)
+startBtn.addEventListener("click", startGame)
+restartBtn.addEventListener("click", startGame)
 
-  window.addEventListener("keydown",carMove) 
-
- 
+window.addEventListener("keydown", carMove)
 
 
- 
- 
 
-  
-  
- 
+
+
+
+
+
+

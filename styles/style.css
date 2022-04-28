@@ -6,17 +6,13 @@ body {
   #my-canvas  {
     background-color:lightgray;
     
-
   }
   .score{
     font-style: italic;
     padding: 50px;
     font-size: 30px;
-  
-   
   }
  
-  
   #start-btn, #restart-btn {
     background-color: green;
     color: white;
@@ -73,6 +69,61 @@ body {
 
 
  }
+
+ .instruccions {
+   font-size: 30px;
+   margin-top: -30px;
+   font-family:sans-serif
+   
+ }
+ .phrase {
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+
+
+ }
+ .phrase1  {
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+
+ }
+
+ .phrase2  {
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+
+ }
+ .phrase3  {
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+
+ }
+ .arrowLeft {
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+
+ }
+
+ .arrowRigth {
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+
+
+ }
+
+
 
  
  
