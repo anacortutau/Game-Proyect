@@ -17,12 +17,61 @@ The game ends when one of the poops falls on the car.
 
 # main.js
 
+- buildSplashScreen () {}
+- buildGameScreen (){} 
+- buildGameOverScreen (){} 
+
 
 # game.js
+- Game () {}
+- points () {}
+- gameOverCollision() {}
+- addNewPoops() {}
+- gameLoop() {}
+
+# car.js
+- Bird () {
+    this.x
+    this.y
+    this.w
+    this.h
+    this.img
+    this.img.src
+    this.speed
+    this.birdDirectionX
+}
+
+- drawBird () {}
+- moveBird () {}
+- birdOneCollision () {}
 
 # car.js 
+- Car (){
+    this.x
+    this.y
+    this.w
+    this.h
+    this.img
+    this.img.src
+    this.speed
+    this.carDirectionX
 
-# pop.js 
+}
+-  drawCar () {}
+-  carMoveLeft () {}
+-  carMoveRight () {}
+-  carOneCollision () {}
+
+# poop.js
+- Poop () {
+    this.x
+    this.y
+    this.w
+    this.h
+    this.img
+    this.img.src
+}
+
 
 ## States y States Transitions
 

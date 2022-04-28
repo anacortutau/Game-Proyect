@@ -32,7 +32,7 @@ const startGame = () => {
   scoreDom.innerText = 0
   audio.play()
   audio.loop = true
-  audio.volume = 0.40
+  audio.volume = 0.10
 
 
 
@@ -52,8 +52,6 @@ const carMove = (event) => {
 
 
 // * ADD EVENT LISTENERS
-
-
 
 startBtn.addEventListener("click", startGame)
 restartBtn.addEventListener("click", startGame)

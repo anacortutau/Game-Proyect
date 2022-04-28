@@ -56,7 +56,6 @@ class Game {
 
     })
 
-
   }
 
   //Todos los metodos que regulan nuestro juego
