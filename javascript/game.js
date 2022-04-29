@@ -77,9 +77,9 @@ class Game {
       eachPoop.movePoop()
     })
     this.gameOverCollision()
-    //this.score()
+   
     scoreDom.innerText = Math.floor(this.score);
-    //this.difficultyLevel()
+   
     this.points()
     //3. dibujar los elementos.
     ctx.drawImage(this.bg, 0, 0, canvas.width, canvas.height)

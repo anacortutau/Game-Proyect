@@ -70,15 +70,60 @@ The game ends when one of the poops falls on the car.
     this.h
     this.img
     this.img.src
+    this.speed
 }
+
+- drawPoop () {}
+- movePoop () {}
+
+# live.js
+- Live () {
+    this.x
+    this.y
+    this.w
+    this.h
+    this.img
+    this.img.src
+
+}
+
+- drawLives () {}
 
 
 ## States y States Transitions
 
+- splashScreen
 - gameScreen
 - gameOverScreen
 
+## Task
+
+- main - buildDom
+- main - buildSplashScreen
+- main - addEventListener
+- main - buildGameScreen
+- main - buildGameOverScreen
+- game - startLoop
+- game - buildCanvas
+- game - updateCanvas
+- game - drawCanvas
+- car - draw
+- car - move
+- game - addNewPoops
+- poop- draw
+- poop - move
+- live - draw
+- game - checkCollision
+- game - GameOver
+- game - addEventListener
 
 
+## Links
+
+### Git
+[Link Repo](https://github.com/anacortutau/Game-Proyect)
+[Link Deploy](https://anacortutau.github.io/Game-Proyect/)
+
+### Slides
 
 
