@@ -125,5 +125,6 @@ The game ends when one of the poops falls on the car.
 [Link Deploy](https://anacortutau.github.io/Game-Proyect/)
 
 ### Slides
+[Link Slides.com](https://docs.google.com/presentation/d/1OAd6ck_dy79Xy49XF7eOIC4PGk1GGjIEWQNxSD1DzpQ/edit#slide=id.g126490f0191_1_33)
 
 
